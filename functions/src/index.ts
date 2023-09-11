@@ -52,7 +52,7 @@ app.post("/worker", async (req, res) => {
 const appSettings: functions.RuntimeOptions = {
     memory: "128MB",
     timeoutSeconds: 540,
-    minInstances: 1,
+    minInstances: 0,
 };
 
 exports.app = functions.runWith({
